@@ -1,0 +1,290 @@
+@charset "UTF-8";
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+
+.header-contact {
+	width: 100%;
+	height: 40px;
+	background-color: black;
+	justify-content: space-around;
+	align-items: center;
+	display: flex;
+}
+header ul {
+	margin-bottom: 0;
+}
+header {
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+}
+
+.logo {
+	margin-right: 130px;
+	font-size: 35px;
+	font-weight: bold;
+	color: #06038E;
+}
+
+.nav-menu {
+	display: flex;
+	width: 100%;
+	height: 60px;
+	background-color: black;
+	align-content: center;
+	justify-content: center;
+}
+
+.nav-menu li:hover {
+	background-color: #06038E;
+}
+
+.nav-menu li {
+	position: relative;
+	display: flex;
+	width: 150px;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+
+.nav-menu ul {
+	height: inherit;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.search-bar {
+	position: relative;
+	width: 400px;
+}
+
+.search-bar input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 5px;
+	border-color: #06038E;
+}
+
+.search-bar button {
+	position: absolute;
+	top: 50%;
+	right: 1px;
+	transform: translateY(-48.5%);
+	color: #fff;
+	border: none;
+	padding: 10px 14px;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #06038E;
+}
+
+.shopping-cart {
+	margin: 0 30px;
+	height: 100%;
+	display: flex;
+	width: 170px;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.header-cart {
+	border: 2px solid #06038E;
+	padding: 10px 11px 10px 38px;
+	border-radius: 4px;
+	letter-spacing: .7px;
+	font-weight: 500;
+	font-size: 13px;
+	color: #333;
+	position: relative;
+}
+
+.header-cart i {
+	left: 10px;
+	bottom: 6px;
+	position: absolute;
+}
+
+.account-sign a {
+	color: black;
+}
+
+.account-sign a:hover {
+	color: #06038E;
+}
+
+.account-sign ul {
+	align-content: center;
+	justify-content: center;
+}
+
+.dropdown-login {
+	display: none;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	position: absolute;
+	z-index: 1000;
+}
+
+.account-sign li:hover .dropdown-login {
+	display: block;
+}
+
+.dropdown-login  a:hover {
+	background-color: #f2f2f2;
+}
+
+.dropdown-login a {
+	border-bottom: 0.2px #666666;
+	color: #333;
+	padding: 5px 5px;
+	height: 30px;
+	display: block;
+	text-decoration: none;
+}
+
+.dropdown-menu {
+	position: absolute;
+	top: 95%;
+	left: 0;
+	display: none;
+	z-index: 1000;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.nav-menu li:hover .dropdown-menu {
+	display: block;
+}
+
+.dropdown-menu a {
+	border-bottom: 0.2px #666666;
+	color: #333;
+	padding: 5px 5px;
+	height: 30px;
+	width: 100%;
+	display: block;
+	text-decoration: none;
+}
+
+.dropdown-menu ul {
+	height: 100%;
+}
+
+.dropdown-menu a:hover {
+	background-color: #f2f2f2;
+}
+
+.section {
+  display: flex;
+  padding: 15px;
+}
+
+.form {
+    max-width: 80%;
+    margin: auto;
+    padding: 2em;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Left section styles */
+.tt-nhan-hang {
+    width: 60%; /* Adjust width as needed */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.tt-thanhtoan table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.tt-thanhtoan th{
+  border-bottom: 1px solid #ddd;
+}
+.tt-thanhtoan td{
+  border-bottom: 1px solid #ddd;
+}
+/* Right section styles */
+.tt-thanhtoan {
+    width: 45%; /* Adjust width as needed */
+    padding: 10px;
+    margin-left: 10px;
+    border: 2px solid #446084;
+    border-radius: 2px;
+    background-color: #f9f9f9;
+}
+
+/* Styling for radio buttons */
+.tt-thanhtoan input[type="radio"] {
+    margin-bottom: 10px;
+}
+.img-momo{
+	width: 40px;
+	height: 40px;
+}
+/* Optional: Style the labels for radio buttons */
+.tt-thanhtoan label {
+    display: block;
+    margin-bottom: 8px;
+}
+/* Style radio buttons specifically for payment methods */
+.tt-thanhtoan .payment-methods label {
+    display: block;
+    margin-bottom: 8px;
+}
+/* Ensure form elements inside sections are styled uniformly */
+.tt-nhan-hang input[type="text"],
+.tt-thanhtoan input[type="text"],
+.tt-nhan-hang input[type="email"],
+.tt-thanhtoan input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.tt-nhan-hang textarea {
+	 width: 100%;
+	 height: 90px;
+}
+button {
+    padding: 0.7em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
